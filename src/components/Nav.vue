@@ -1,20 +1,10 @@
-<script setup>
-// import { ref } from 'vue'
-
-// defineProps({
-//   msg: String
-// })
-
-// const count = ref(0)
-</script>
-
 <template>
   <div class="nav">
     <div class="nav-container">
       <img src="../assets/TC-logo.png" class="logo" />
       <div class="nav__right">
-        <a href="">Claim</a>
-        <img src="../assets/menu.svg" class="menu" />
+        <a href="https://www.samerahealth.com/" target="_blank">Claims</a>
+        <!-- <img src="../assets/menu.svg" class="menu" /> -->
       </div>
     </div>
   </div>
