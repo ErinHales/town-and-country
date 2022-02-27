@@ -28,8 +28,7 @@ const products = [{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 50px 0;
+  margin: 50px 20px;
 }
 .product {
   display: flex;
@@ -47,5 +46,11 @@ const products = [{
 .product-img {
   max-height: 100%;
   margin-right: 20px;
+}
+
+@media (max-width: 650px) {
+  .product {
+    flex-direction: column;
+  }
 }
 </style>

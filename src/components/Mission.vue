@@ -60,6 +60,7 @@ const values = [{
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin: 10px;
   background-color: #1465AE;
   box-shadow: 0 4px 4px #B0B0B0;
 }
@@ -68,5 +69,16 @@ const values = [{
 }
 .statement {
   margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+  .value-bubbles {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bubble {
+    margin-bottom: 20px;
+  }
 }
 </style>

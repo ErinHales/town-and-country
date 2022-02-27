@@ -28,12 +28,12 @@
   margin-left: 20px;
   margin-bottom: 40px;
 }
-.spacer {
-  height: 100px;
-}
 .label {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 20px;
+}
+.spacer {
+  height: 60px;
 }
 </style>
