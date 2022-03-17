@@ -1,12 +1,17 @@
 <script setup>
+import Dental from '../assets/product-dental.png'
+import Vision from '../assets/product-vision.png'
+import Annuity from '../assets/product-annuity.png'
+
 const products = [{
-  img: '/product-dental.png',
-  title: 'Dental',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem risus, eleifend ac quam ac, congue mattis neque. Aenean nunc risus, posuere non hendrerit quis, dictum sit amet quam. Suspendisse tempus purus volutpat, tempus turpis at, pellentesque ex.'
+  img: Dental,
+  title: 'Dental'
 }, {
-  img: '/product-vision.png',
-  title: 'Vision',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem risus, eleifend ac quam ac, congue mattis neque. Aenean nunc risus, posuere non hendrerit quis, dictum sit amet quam. Suspendisse tempus purus volutpat, tempus turpis at, pellentesque ex.'
+  img: Vision,
+  title: 'Vision'
+}, {
+  img: Annuity,
+  title: 'Annuity'
 }]
 </script>
 
@@ -16,7 +21,7 @@ const products = [{
       <img :src="p.img" class="product-img" />
       <div>
         <h2 class="product-title">{{ p.title }}</h2>
-        <p>{{ p.description }}</p>
+        <!-- <p>{{ p.description }}</p> -->
       </div>
     </div>
   </div>

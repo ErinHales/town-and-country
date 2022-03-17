@@ -1,13 +1,16 @@
 <script setup>
+import Lock from '../assets/lock.svg'
+import Equality from '../assets/equality.svg'
+import Honesty from '../assets/honesty.svg'
 const values = [{
-  icon: '../assets/menu.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  icon: Lock,
+  description: 'Security'
 }, {
-  icon: '../assets/menu.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  icon: Equality,
+  description: 'Equality'
 }, {
-  icon: '../assets/menu.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  icon: Honesty,
+  description: 'Honesty'
 }]
 </script>
 
@@ -17,15 +20,12 @@ const values = [{
       <h2 class="mission-title">Our Mission</h2>
       <div class="value-bubbles">
         <div v-for="(v, i) in values" :key="i" class="bubble">
-          <img src="../assets/lock.svg" class="bubble-icon" />
-          <p>{{ v.description }}</p>
+          <img :src="v.icon" class="bubble-icon" />
+          <p class="value-bubbles__title">{{ v.description }}</p>
         </div>
       </div>
       <div class="statement">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem risus, eleifend ac quam ac, congue mattis neque.</h3>
-        <h3>Aenean nunc risus, posuere non hendrerit quis, dictum sit amet quam. Suspendisse tempus purus volutpat, tempus turpis at, pellentesque ex.</h3>
-        <h3>Nulla pulvinar ornare dolor. Vestibulum quis augue ut mi auctor rhoncus. Pellentesque justo tellus, egestas efficitur congue tempus, congue ac turpis. Nullam semper nulla vitae commodo pretium. Etiam nec sapien enim. Vestibulum magna ligula, rhoncus in imperdiet sit amet, accumsan sed risus. Fusce sed suscipit libero.</h3>
-        <h3>Curabitur finibus ac dolor et posuere. Nulla facilisi. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h3>
+        <h3>Our mission at Town & Country Life Insurance is providing peace of mind and security through innovative life and health products since 1955.</h3>
       </div>
     </div>
   </div>
@@ -50,6 +50,9 @@ const values = [{
   display: flex;
   justify-content: space-between;
 }
+.value-bubbles__title {
+  font-size: 20px;
+}
 .bubble {
   display: flex;
   flex-direction: column;
@@ -68,7 +71,11 @@ const values = [{
   height: 56px;
 }
 .statement {
-  margin-top: 50px;
+  text-align: center;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 2.5;
+  margin: 100px auto 50px auto;
 }
 
 @media (max-width: 700px) {
